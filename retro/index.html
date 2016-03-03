@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+    <!-- Use the .htaccess and remove these lines to avoid edge case issues. More info: h5bp.com/b/378 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="title" content="StrapUI - Free Bootstrap Themes &amp; Premium Bootstrap Templates">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="StrapUI brings you the best Twitter Bootstrap templates and themes on the web. Buy bootstrap themes." />
+    <meta name="keywords" content="twitter bootstrap themes,bootstrap themes,bootstrap templates,twitter bootstrap templates,cleanstrap,flat,themes,flatui,buy themes,cheap,quality,design,templates" />
+    <title>Retro by StrapUI: Old newspaper Bootstrap style</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <style>
+    ul li {
+        padding-top: 10px;
+    }
+    </style>
+</head>
+
+<body id="top" class="index" data-spy="scroll" data-target=".scrollnav" data-offset="95">
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="index.html">Jumpy Marketing Solutions</a>
+                <div class="nav-collapse collapse" id="main-menu">
+                    <ul class="nav pull-right">
+                        <!--  <li><a href="components.html">Components</a></li>
+         <li class="dropdown" id="preview-menu">
+           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Download <b class="caret"></b></a>
+           <ul class="dropdown-menu">
+             <li><a target="_blank" href="css/bootstrap.min.css">bootstrap.min.css</a></li>
+             <li><a target="_blank" href="css/bootstrap.css">bootstrap.css</a></li>
+             <li class="divider"></li>
+             <li><a target="_blank" href="less/variables.less">variables.less</a></li>
+             <li><a target="_blank" href="less/retro.less">retro.less</a></li>
+           </ul> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="padding-top:30px; ">
+            <div class="span4" style="padding-top:30px; height: 482px; width: 250px; overflow-y: scroll;">
+                <ul style="list-style: none;">
+                    <li>
+                        <div class="qq-upload-button button" style="position: relative; overflow: hidden; direction: ltr;">
+                            <span class="upload-tooltip">Click or drag a photo here</span>
+                            <span class="upload-click">Click</span>
+                            <input type="file" name="file" id="imgselector" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;">
+                        </div>
+                        <div class="qq-upload-progress">
+                            <span class="bar">
+    </span>
+                        </div>
+                    </li>
+                </ul>
+                <ul style="list-style: none;" id="img-collection">
+                </ul>
+            </div>
+            <div class="span4" style="padding-left:20px;">
+                <div class="row">
+                    <div class="col">
+                        <div class="control-group">
+                            <label class="control-label" for="input01">Slide Length</label>
+                            <div class="controls">
+                                <input type="text" class="input-xlarge" id="input01">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button id="gen-video">Generate Video</button>
+                    </div>
+                </div>
+                <h3>Your Video</h3>
+                <video width="320" height="240" controls>
+                    <source src="out.mp4" type="video/mp4"> Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="span4">
+                <h3>Example addresses</h3>
+                <address>
+                    <strong>Twitter, Inc.</strong>
+                    <br> 795 Folsom Ave, Suite 600
+                    <br> San Francisco, CA 94107
+                    <br>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                </address>
+                <address>
+                    <strong>Full Name</strong>
+                    <br>
+                    <a href="mailto:#">first.last@gmail.com</a>
+                </address>
+            </div>
+        </div>
+    </div>
+    <!-- Masthead
+================================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retro.js"></script>
+    <script type="text/javascript">
+    function uploadS3(file) {
+            var xhr = new XMLHttpRequest(),
+                fd = new FormData(),
+                key = "jalajiitr@gmail.com" + '/' + ""+ '/' + file.name;
+
+            // Populate the Post paramters.
+            fd.append('key', "GLGervlpo+DZAEukLkRmG9kG/lNxQ4hn9M9dQdXj");
+            fd.append('AWSAccessKeyId', 'AKIAJXP4OOA2RVCCFRHA');
+            fd.append('acl', 'private');
+            fd.append('success_action_redirect', "https://attachments.me/upload_callback")
+            fd.append('policy', "CnsiZXhwaXJhdGlvbiI6ICIyMDIwLTAxLTAxVDAwOjAwOjAwWiIsCiJjb25kaXRpb25zIjogWyAKICB7ImJ1Y2tldCI6ICJhdHRhY2htZW50c21lLWZpbGUtZHJvcCJ9LCAKICBbInN0YXJ0cy13aXRoIiwgIiRrZXkiLCAiIl0sCiAgeyJhY2wiOiAicHJpdmF0ZSJ9LAogIHsic3VjY2Vzc19hY3Rpb25fcmVkaXJlY3QiOiAiaHR0cHM6Ly9hdHRhY2htZW50cy5tZS91cGxvYWRfY2FsbGJhY2sifSwKICBbInN0YXJ0cy13aXRoIiwgIiRDb250ZW50LVR5cGUiLCAiIl0sCiAgWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsIDAsIDUyNDI4ODAwMF0KXQp9")
+            fd.append('signature', "IwZctkWS92kelyYv1KfIKqZotwo=")
+            fd.append('Content-Type', '$Content-Type')
+                // This file object is retrieved from a file input.
+            fd.append('file', file);
+            xhr.open('POST', 'https://attachmentsme-file-drop.s3.amazonaws.com', true);
+
+            // Keep track of upload progress so that we can message
+            // it to the user.
+            xhr.upload.addEventListener('progress', function(e) {
+                if (firstProgressEvent) {
+                    _this.total += e.total;
+                }
+                firstProgressEvent = false;
+                _this.loaded += (e.loaded - lastBytesLoaded);
+                _this.onProgress(_this.loaded / _this.total);
+            }, false);
+
+            // If the upload completes we should decrement the uploads
+            // currently taking place.
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState != 4) {
+                    return;
+                }
+                _this.uploadsInProgress--;
+                // Explicitly trigger our upload complete endpoint. There's a bug with
+                // redirects in Chrome which makes this necessary.
+                xhr = new XMLHttpRequest();
+                xhr.open("GET", "https://attachments.me/upload_callback?key=" + key, false);
+                xhr.send(null);
+            };
+        }
+
+    $(document).ready(function() {
+        $('#imgselector').change(function() {
+
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        $('#img-collection')
+                            .before(
+                                $('<li>').append(
+                                    $('<img style="width:200px; height:150px; padding-bottom:10px;">').attr('src', e.target.result)));
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                    uploadS3(input.files[0]);
+                }
+            }
+            readURL(this);
+        })
+
+        
+
+        $("#gen-video").click(function() {
+            $.post("http://localhost:3000/api/process-video", {
+                "bookName": "jalaj",
+                "bookPrice": 14
+            }, function() {
+
+            });
+        })
+    });
+    </script>
+</body>
+
+</html>
